@@ -3,40 +3,52 @@ h1,h2,h3,h4,h5,h6 {
     border-color: $base0; 
 }
 
-a, a:active, a:visited {
-    color: $base1; 
+#window{
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    /*-webkit-transition:all 0.5s; */
+    background: rgba(0, 43, 54, 0.82);
+    border-radius: 5px;
+    height: 620px;
+    margin-bottom:40px;
+    margin-top:40px;
+    max-width: 900px;
+    overflow: hidden; 
+    width: 90%;
 }
 
-.color-yellow {
+header p {
+    font-weight: bold;
+}
+.prompt-username {
+    color: $green;
+    font-weight: bold;
+}
+
+.prompt-domain {
+    color: $blue;
+    font-weight: bold;
+}
+
+.prompt-pwd {
     color: $yellow;
+    font-weight: bold;
 }
 
-.color-orange {
-    color: $orange;
+#welcome-logo {
+    white-space: pre;
+    font-size: $small-font-size;
+    line-height: $global-lineheight;
 }
 
-.color-red {
+#welcome-message {
     color: $red;
 }
 
-.color-magenta {
-    color: $magenta;
-}
-
-.color-violet {
-    color: $violet;
-}
-
-.color-blue {
-    color: $blue;
-}
-
-.color-cyan {
-    color: $cyan;
-}
-
-.color-green {
-    color: $green;
+a, a:active, a:visited {
+    color: $base1; 
 }
 
 /*

@@ -10,38 +10,27 @@
   </head>
   <body>  
 
-<div class="row medium-8 large-7 columns">
-<!--
-<pre>
-██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗
-██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝
-██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  
-██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  
-╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗
- ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
-</pre>
--->
+<div class="row medium-8 large-7 columns" id="window">
 
-<p style="font-weight:bold;">
-Yun Hao's Homepage (tty1)</br>
-Copyleft @ Yun Hao (haoyun.math@gmail.com) Last update: 2016-12-12</br>
+<header>
+<p>Yun Hao's Homepage (haoyun.github.io)</br>
+Copyleft © <a href="mailto:haoyun.math@gmail.com">haoyun dot math at gmail</a></br>
+Last update: 2016-12-12</p>
+</header>
+<p>login: guest</br>
+password:</p>
+<div  id="welcome-logo" class="text-center"> _       __     __                          __
+| |     / /__  / /________  ____ ___  ___  / /
+| | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \/ / 
+| |/ |/ /  __/ / /__/ /_/ / / / / / /  __/_/  
+|__/|__/\___/_/\___/\____/_/ /_/ /_/\___(_)   
+                                              
+</div>
+<div id="welcome-message">Successfully logged in.</div>
 
-login: guest</br>
-password:</br>
-<span class="color-green">Successfully logged in.</span>
-</p>
-<pre class="text-center">
- _       _         _                                    _ 
-( )  _  ( )       (_ )                                 ( )
-| | ( ) | |   __   | |    ___    _     ___ ___     __  | |
-| | | | | | /'__`\ | |  /'___) /'_`\ /' _ ` _ `\ /'__`\| |
-| (_/ \_) |(  ___/ | | ( (___ ( (_) )| ( ) ( ) |(  ___/| |
-`\___x___/'`\____)(___)`\____)`\___/'(_) (_) (_)`\____)(_)
-                                                       (_)
 <!--
 http://patorjk.com/software/taag/#p=display&f=Puffy&t=Welcome!%0A
 -->
-</pre>
 
   <h2>aboutme</h2>
   <p>
@@ -69,7 +58,13 @@ see about.
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
     <script>
-    $( "h2" ).prepend( '<span style="font-weight:bold;"><span class="color-green">guest</span>@<span class="color-blue">yhao-hp</span>: <span class="color-yellow">~</span> $ </span><span> more </span>' );
+    $( "h2" ).prepend( '<span class="prompt-username">guest</span>\
+<span class="prompt-at">@\
+<span class="prompt-domain">yhao-hp</span>\
+<span class="prompt-colon">:</span> \
+<span class="prompt-pwd">~</span> \
+<span class="prompt-dollar">$</span> \
+<span class="prompt-cmd">more</span> ' );
     $( "h2").append( '<span>.md</span>')
     </script>  
 
