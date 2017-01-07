@@ -15,10 +15,16 @@
  * Date: Sun, 11 Dec 2016 13:17:01 +0000
  */
 
-// modified
-// v -- ok
-// ? -- not understand
-// h -- need improvement
+
+/*!
+ *
+ *   // modified
+ *   // v -- ok
+ *   // ? -- not understand
+ *   // h -- need improvement
+ *
+ */
+
 .terminal .terminal-output .format,
 .cmd .format,
 .cmd .prompt,
@@ -306,9 +312,12 @@
     clear: both;
 }
 
+
+/*
 .terminal a {
-    //    color: #0F60FF;
-} //v base1 in _custom.scss
+    color: #0F60FF;
+} //v 
 .terminal a:hover {
-    //    color: red;
-} //v base1 in _custom.scss
+    color: red;
+} //v
+*/ //base1 in _custom.scss
